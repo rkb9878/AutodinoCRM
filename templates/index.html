@@ -124,12 +124,13 @@
     </div> -->
     <!--End of subscribe to our NEWSLETTER -->
     <!-- carousel -->
-    <!-- <div class="carouselHeading">
+    <div class="carouselHeading">
         <div class="carousel" id="carousel">
             <div>
                 <div class="text-center pt-5">
                     <h1 class="display-4 font-weight-bold text-white">SELECT YOUR VEHICLE</h1>
-                    <p style="font-size: 18px; font-weight: 300;" class="text-white h6">Customize, Modify, Upgrade, Repair, Replace
+                    <p style="font-size: 18px; font-weight: 300;" class="text-white h6">Customize, Modify, Upgrade,
+                        Repair, Replace
                     </p>
                 </div>
             </div>
@@ -170,24 +171,26 @@
                                         </select>
                                     </div>
                                     <div>
-                                        <button style="font-size: 24px; padding: 12px 40px;" class="btn w-100 btn-danger">Go</button>
+                                        <button style="font-size: 24px; padding: 12px 40px;"
+                                                class="btn w-100 btn-danger">Go
+                                        </button>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
-            </div> -->
-    <div class="carouselbottom pt-5 text-center">
-        <a href=""> SHOP BY PRODUCT (16,434,423)</a>
-        <span style="border-left: 2px solid white; height: 10px;"></span>
-        <a href=""> SHOP BY BRAND (3,227)</a>
-        <span style="border-left: 2px solid white; height: 10px;"></span>
-        <a href=""> BY SERVICE TYPE</a>
-    </div>
-    {#    </div>#}
-    {#    </div>#}
-    <!-- end of carousel -->
+            </div>
+            <div class="carouselbottom pt-5 text-center">
+                <a href=""> SHOP BY PRODUCT (16,434,423)</a>
+                <span style="border-left: 2px solid white; height: 10px;"></span>
+                <a href=""> SHOP BY BRAND (3,227)</a>
+                <span style="border-left: 2px solid white; height: 10px;"></span>
+                <a href=""> BY SERVICE TYPE</a>
+            </div>
+            {#    </div>#}
+            {#    </div>#}
+            <!-- end of carousel -->
 </header>
 <!-- some product cateogry -->
 <section class="pTypeContainer">
@@ -243,7 +246,8 @@
             </li>
             {% for catego in category %}
                 <li class="nav-item">
-                    <a class="nav-link text-dark text-uppercase" aria-current="page"  onclick="fetchCategory({{ catego.id }})">{{ catego.name }}</a>
+                    <a class="nav-link text-dark text-uppercase" aria-current="page"
+                       onclick="fetchCategory({{ catego.id }})">{{ catego.name }}</a>
                 </li>
             {% endfor %}
 
@@ -755,7 +759,7 @@
         xml.onreadystatechange = function () {
             if (this.status == 200 && this.readyState == 4) {
                 var output = this.response;
-                console.log("=========================>",output);
+                console.log("=========================>", output);
             }
         };
         xml.open('GET', {% url 'product:categoryApi' %}, true);
@@ -814,7 +818,6 @@
 
     backgroundSequence();
 </script>
-
 
 
 </body>
