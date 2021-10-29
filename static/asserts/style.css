@@ -1,0 +1,1207 @@
+:root{
+    --backgroundColor :rgb(248, 248, 248);
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: rgb(241, 239, 239);
+}
+
+.maincontainer {
+    padding: 0 5%;
+}
+
+
+/* navbar */
+
+
+/* .navbarContainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+} */
+
+.menuIcon {
+    padding-top: 30px;
+    padding-right: 350px;
+}
+
+.menuIcon div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.navbarMain {
+    display: flex;
+}
+
+.headerLogo {
+    /* background: #5faf4b url(https://cdn.carid.com/css/prod-images/613917d4.svg) no-repeat 50% 12px; */
+    /* background: #27C49A url('images/DIINO-07.png') no-repeat 50% 12px;
+    left: 120px;
+    position: absolute;
+    text-indent: -999em;
+    top: 0px;
+    z-index: 3;
+    background-position-y: 7px;
+    background-size: 108px 104px;
+    bottom: -46px;
+    width: 90px;
+    height: 144px; */
+}
+
+.headerLogo::before {
+    /* /* bottom: 14%; */
+    /* color: #fff;
+    content: attr(data-text);
+    font-size: 0.9em;
+    left: 50%;
+    position: absolute;
+    text-indent: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    white-space: nowrap;
+    /* z-index: 2; */
+}
+
+.headerLogo::after {
+    /* background: url(https://cdn.carid.com/css/prod-images/6a8c3be9.svg) no-repeat; */
+    background: url('images/DIINO-03.png') no-repeat;
+    background-size: 100% auto;
+    content: "";
+    display: block;
+    position: absolute;
+    /* left: 200px; */
+    height: 50px;
+    left: 122px;
+    top: 15px;
+    width: 250px;
+}
+
+.searchtheam {
+    border: 1px solid black;
+    height: 50px;
+    width: 530px;
+    border-radius: 5px;
+    margin-top: 11px;
+    cursor: pointer;
+}
+
+.searchtheamLabel {
+    border-color: #757575;
+    cursor: pointer;
+    padding: 11px 10px 11px 20px;
+}
+
+.searchtheam::before {
+    content: "Search by Make Model Year, Product Type, Part Number ....";
+    /* padding: 10px; */
+    color: rgb(185, 182, 182);
+}
+
+.searchtheam::after {}
+
+.accountContainer {
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+#myAccount {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    /* padding-top: 15px; */
+}
+
+#myAccount::after {
+    /* content: url(https://cdn.carid.com/css/prod-images/e529507e.svg);
+    position: absolute;
+    background-size: 12px 6px; */
+}
+
+#myAccountContainer:hover #arrowIcon {
+    transform: rotate(270deg);
+}
+
+#arrowIcon {
+    transform: rotate(90deg);
+    width: 6px;
+    transition: all 0.5s;
+}
+
+.addToCart {
+    display: flex;
+    padding-top: 23px;
+}
+
+.addToCart a {
+    font-size: 34px;
+    padding-left: 40px;
+    color: black;
+}
+
+.stickFormClass {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.692);
+    top: 0px;
+    z-index: 999;
+}
+
+
+
+
+/* #arrowIcon:hover {
+    transform: rotate(270deg);
+} */
+
+.nav-head {
+    display: block;
+}
+
+.nav-menu-wrapper {
+    margin-left: 108px;
+    display: flex;
+}
+
+.nav-menu-item {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-top: 3px;
+    /* justify-content: center; */
+}
+
+.nav-menu-item>li {
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    padding: 10px 16px;
+}
+
+.nav-menu-item>li>a {
+    color: black;
+    font-size: 100%;
+    font-weight: 500;
+    text-decoration: none;
+    /* letter-spacing: 2px; */
+}
+
+.nav-menu-item>li:hover>a {
+    color: rgb(245, 164, 14);
+}
+
+
+@media (max-width: 599px) {
+
+    .menuIcon {
+        padding-top: 30px;
+        padding-right: 77px;
+    }
+    .headerLogo {
+        /* background: #5faf4b url(https://cdn.carid.com/css/prod-images/613917d4.svg) no-repeat 50% 12px; */
+        background: #27C49A url('images/DIINO-07.png') no-repeat 50% 12px;
+        left: 71px;
+        position: absolute;
+        text-indent: -999em;
+        top: 0px;
+        z-index: 3;
+        background-position-y: 0px;
+        background-size: 73px 87px;
+        bottom: -46px;
+        width: 59px;
+        height: 100px;
+    }
+    .headerLogo::after {
+        display: none;
+    }
+    .nav-head {
+        display: none;
+    }
+    .accountContainer{
+        display: none;
+    }
+    .searchtheam {
+        border: 1px solid black;
+        height: 50px;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 11px;
+        cursor: pointer;
+        margin-bottom: 27px;
+    }
+    .searchtheam::before {
+        content: "Search  ....";
+        padding: 30px;
+        color: rgb(185, 182, 182);
+    }
+    .addToCart{
+        display: flex;
+        padding-top: 13px;
+    }
+    .addToCart a{
+        font-size: 34px;
+        padding-left: 14px;
+        color: black;
+    }
+    #search{
+        margin-left: 55px;
+    }
+    #heart{
+        display: none;
+    }
+    
+}
+
+/* @media (min-width: 768px) { */
+@media (min-width: 660px) and (max-width:902px) {
+    .menuIcon {
+        padding-top: 30px;
+        padding-right: 252px;
+    }
+    .headerLogo {
+        /* background: #5faf4b url(https://cdn.carid.com/css/prod-images/613917d4.svg) no-repeat 50% 12px; */
+        /* background: #27C49A url('images/DIINO-07.png') no-repeat 50% 12px;
+        left: 90px;
+        position: absolute;
+        text-indent: -999em;
+        top: 0px;
+        z-index: 3;
+        background-position-y: 0px;
+        background-size: 73px 87px;
+        bottom: -46px;
+        width: 59px;
+        height: 100px; */
+    }
+    .headerLogo::after {
+        background: url('images/DIINO-03.png') no-repeat;
+        background-size: 100% auto;
+        content: "";
+        display: block;
+        position: absolute;
+        /* left: 200px; */
+        height: 50px;
+        left: 70px;
+        top: 15px;
+        width: 250px;
+    }
+    .nav-head {
+        display: none;
+    }
+    .accountContainer{
+        display: none;
+    }
+    .searchtheam {
+        border: 1px solid black;
+        height: 50px;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 18px;
+        cursor: pointer;
+        margin-bottom: 27px;
+    }
+    .searchtheam::before {
+        content: "Search  ....";
+        padding: 30px;
+        color: rgb(185, 182, 182);
+    }
+    .addToCart{
+        display: flex;
+        padding-top: 21px;
+    }
+    .addToCart a{
+        font-size: 34px;
+        padding-left: 14px;
+        color: black;
+    }
+    #search{
+        margin-left: 55px;
+    }
+    #heart{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    
+    
+}
+
+@media (min-width: 1200px) {
+    
+}
+
+
+/* end of navbar */
+
+
+/* side navbar */
+
+.offScroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidenav div a {
+    padding: 8px 8px 8px 18px;
+    /* text-decoration: none; */
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#usersWork a i {
+    font-size: 24px;
+    color: black;
+    padding-right: 15px;
+}
+
+#Accessories a::after {
+    background: url(https://cdn.carid.com/css/prod-images/e62f34f2.svg) 50% 50% no-repeat;
+    background-size: auto 16px;
+    content: '';
+    height: 100%;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    width: 12px;
+}
+
+.left-dd-title {
+    -webkit-align-content: center;
+    align-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #fff;
+    background-position: 20px 50%;
+    background-repeat: no-repeat;
+    background-size: 46px auto;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 1.4em;
+    font-weight: 400;
+    height: 52px;
+    line-height: 1.16;
+    padding-left: 20px;
+    padding-right: 30px;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.06);
+    transition: background-color 0.1s ease;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sidenav div {
+    padding: 8px 8px 8px 18px;
+}
+
+.sidenav a img {
+    width: 50px;
+}
+
+.sidenav a:hover {
+    color: rgb(245, 164, 14);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 16px;
+    }
+}
+
+
+/* end of sidenavbar */
+
+
+/* carousel */
+
+.NEWSLETTER {
+    background: rgb(15, 15, 54);
+}
+
+.btn-white {
+    background-color: white;
+}
+
+.btn-white:hover {
+    background: rgb(220, 220, 248);
+}
+
+.carouselHeading {}
+
+.carousel {
+    /* height: 50vh; */
+    height: 380px;
+    /* background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url("images/Cars/1.jpg") no-repeat center center/cover; */
+}
+
+.carouselForm {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    grid-gap: 15px;
+}
+
+.carouselbottom a {
+    color: white;
+    padding: 0 15px;
+}
+
+.carouselForm div select {
+    height: 60px;
+}
+
+.carouselForm div select option {
+    height: 40px;
+}
+@media (max-width: 576px) {
+    .carousel {
+        height: 380px;
+    }
+    .carouselForm{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel {
+        /* height: 580px; */
+    }
+    /* .carouselForm{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    } */
+}
+
+@media (min-width: 992px) {
+    
+}
+
+@media (min-width: 1200px) {
+    .pTypeContainer>div {
+        width: 75%;
+    }
+}
+
+
+
+/* end of carousel */
+
+
+/* pType */
+
+.pTypeContainer {
+    /* background: rgb(252, 250, 250); */
+}
+
+.pTypeContainer>div {
+    width: 75%;
+}
+
+.pType {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.pType>li {
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pType>li>img {
+    padding: 30px;
+    width: 170px;
+}
+
+.pType>li:hover a {
+    text-decoration: underline;
+}
+
+.pType>li>a {
+    display: block;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.wrap {
+    margin: 0 auto;
+    position: relative;
+}
+
+@media (max-width: 576px) {
+    .pTypeContainer>div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .pTypeContainer>div {
+        width: 75%;
+    }
+}
+
+@media (min-width: 992px) {
+    .pTypeContainer>div {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pTypeContainer>div {
+        width: 75%;
+    }
+}
+
+
+/* end of pType */
+
+
+/* product card */
+
+.productCard-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+@media (max-width: 576px) {
+    .productCard-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .productCard-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .productCard-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .productCard-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+.productCard {
+    background: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.productCard>img {
+    height: 100px;
+    width: 150px;
+}
+
+.productCard>a {
+    color: black;
+    padding-top: 15px;
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.productCard:hover>a {
+    text-decoration: underline;
+}
+
+
+/* end of product card */
+
+.service-p {
+    color: #808080;
+    font-size: 16px;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.service {
+    text-decoration: none !important;
+    background: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: block;
+    -webkit-flex: 0;
+    flex: 0;
+    min-width: 254px;
+    /* height: 116px; */
+    line-height: 1.2;
+    margin-top: 36px;
+    padding: 0 24px;
+    position: relative;
+}
+
+.service::after {
+    background: url("images/5124fc6b.svg") 50% 50% no-repeat;
+    background-size: 100% auto;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 12px;
+    top: 0;
+    width: 7px;
+    z-index: 3;
+}
+
+.service-heading {
+    font-size: 1.3em;
+    display: block;
+    color: black;
+    padding-top: 36px;
+    font-weight: 400;
+}
+
+.service-heading:hover {
+    text-decoration: underline;
+}
+
+.service-body {
+    font-size: 14px;
+    display: block;
+    padding: 10px 0px 10px 0px;
+    color: gray;
+    padding-bottom: 24px;
+}
+
+.service-img {
+    top: -26px;
+    position: absolute;
+}
+
+.smargin-top {
+    margin-top: 80px;
+}
+
+
+/* vedio gallery */
+
+.videoGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.videoGallery3 {
+    grid-area: 1 / 2 / span 2 / span 1;
+}
+
+.videoGalleryImages {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* @media (max-width: 576px) {
+    .videoGallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    
+        grid-gap: 10px;
+    }
+    .videoGallery3 {
+        grid-area:auto;
+    }
+} */
+
+@media (max-width: 576px) {
+    .videoGallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .videoGallery3 {
+        grid-area: 2 / 1 / span 1 / span 2;
+        height: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    .videoGallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .videoGallery3 {
+        grid-area: 2 / 1 / span 1 / span 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .videoGallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .videoGallery3 {
+        grid-area: 1 / 2 / span 2 / span 1;
+    }
+}
+
+@media (min-width: 1200px) {
+    .videoGallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+    .videoGallery3 {
+        grid-area: 1 / 2 / span 2 / span 1;
+    }
+}
+
+
+/* end of Video gallery */
+
+
+/* Feature button  */
+
+.tabPanel {
+    display: none;
+}
+
+.subCateogry {
+    background: #fff;
+    border: 1px solid #d3d0d0;
+    border-radius: 4px !important;
+    box-sizing: border-box;
+    color: #464646 !important;
+    text-decoration: none !important;
+    line-height: 1.1;
+    margin: 0 1% 12px;
+    padding: 18px 28px 18px 0.8em;
+    position: relative;
+    text-transform: capitalize;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.subCateogry::after {
+    background: url("images/5124fc6b.svg") 50% 50% no-repeat;
+    background-size: 100% auto;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 12px;
+    top: 0;
+    width: 7px;
+    z-index: 3;
+}
+
+.subCateogry:hover {
+    border: 1px solid #969292;
+}
+
+.subCategory-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-gap: 8px; */
+    row-gap: 5px;
+    column-gap: 10px;
+}
+
+@media (max-width: 576px) {
+    .subCategory-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5px;
+        column-gap: 10px;
+    }
+    .subCateogry {
+        background: #fff;
+        border: px solid #d3d0d0;
+        border-radius: 4px !important;
+        box-sizing: border-box;
+        color: #464646 !important;
+        text-decoration: none !important;
+        line-height: 1.1;
+        margin: 0 1% 12px;
+        padding: 18px 28px 18px 0.8em;
+        position: relative;
+        text-transform: capitalize;
+        width: 100%;
+        transition: all 0.5s;
+    }
+    .subCateogry:hover {
+        border: 1px solid #969292;
+    }
+}
+
+@media (min-width: 768px) {
+    .subCategory-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5px;
+        column-gap: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .subCategory-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 5px;
+        column-gap: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .subCategory-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        row-gap: 5px;
+        column-gap: 10px;
+    }
+}
+
+.tabButtons {
+    background: white;
+    font-size: 18px;
+    border: none;
+    padding: 8px 8px;
+    margin: 0px 15px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 576px) {
+    .tabButtons {
+        background: white;
+        font-size: 12px;
+        border: none;
+        padding: 8px 8px;
+        margin: 0px 15px;
+    }
+}
+
+.tabButtons:focus {
+    outline: 0;
+}
+
+.tabButtons:hover {
+    outline: none;
+}
+
+.tabButton {
+    border-bottom: 4px solid black;
+}
+
+.toggle-content {
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.toggle-content.is-visible {
+    display: block;
+    height: auto;
+}
+
+
+/* end of Feature Button */
+
+
+/* gallery2 */
+
+.galleryImage2 {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 2fr;
+    grid-gap: 15px;
+    grid-template-rows: 280px 300px 400px;
+}
+
+.galleryImage2>div {
+    overflow: hidden;
+}
+
+.galleryImage22 {
+    grid-area: 1 / 2 / span 2 / span 1;
+}
+
+.galleryImage26 {
+    grid-area: 3 / 1 / span 1 / span 2;
+}
+
+.galleryImage2 div img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* end of gallery2 */
+
+
+/* contactmeCard-container */
+
+.contactmeCard-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #fff;
+}
+
+.contactCardBack {
+    background-color: #022344;
+}
+
+.contactmeCard-container>div {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.contactmeCard1 {}
+
+.contactmeCard2 {}
+
+.contactmeCard3 {}
+
+
+/*end of contactmeCard-container */
+
+
+/* text area */
+
+.text-area-p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+/* end of text area */
+
+
+/* footer */
+
+
+footer {
+    background: var(--backgroundColor);
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.footerSubHeading {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.footerSubHeading-a a {
+    display: block;
+    padding: 10px 0;
+    font-size: 15px;
+    color: black;
+}
+
+.social {
+    padding: 32px 0;
+}
+
+.social a {
+    background-position: center;
+    color: gray;
+    padding: 12px 15px;
+    font-size: 18px;
+    border: 1px solid #d8d8d8;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.social a:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.footer2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 20px;
+}
+
+.footerImages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footerImages div img {
+    width: 120px;
+}
+
+.footer3main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bg-gray {
+    background: var(--backgroundColor);
+}
+
+.footer3-a a {
+    color: black;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.displaySubContent {
+    display: grid;
+}
+
+
+/* @media (max-width: 576px) { */
+
+@media (max-width: 576px) {
+    .footer2 {
+        display: none;
+    }
+    .footerContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+    .social {
+        display: flex;
+    }
+    #gal {
+        display: none;
+    }
+    .footerSubHeading-a {
+        display: none;
+    }
+    #footerPolicy {
+        display: none;
+    }
+    .footer3main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #copyright {
+        text-align: center;
+    }
+    .footerSubHeading::after {
+        content: url('images/image.webp');
+    }
+    .footerSubHeading {
+        font-size: 16px;
+    }
+}
+
+
+/* @media (min-width: 768px) { */
+@media (min-width: 576px) and (max-width:902px) {
+    .footer2 {
+        display: none;
+    }
+    .footerContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+    #gal {
+        display: none;
+    }
+    .footerSubHeading {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer2 {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 20px;
+    }
+    .footerContainer {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
+    #gal {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer2 {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 20px;
+    }
+    .footerContainer {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
+    #gal {
+        display: block;
+    }
+}
+
+/* end of footer */

@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AutoDiino</title>
+
+    <!-- headerfile -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="stylesheet" href="../static/asserts/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/asserts/fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="../static/asserts/style.css">
+    <link rel="stylesheet" href="../static/asserts/lineIcone/css/line-awesome.css">
+    <!-- end of headerfiles -->
+</head>
+
+<body id="main">
+
+<header>
+    <!-- banner -->
+    <!-- <div class="bg-dark text-center text-white p-2">
+        <span style="font-size: 16px;font-weight: bold;">Tire Delivery & installations. <a href=""> Learn More</a></span>
+    </div> -->
+    <!-- end of banner -->
+    <!-- navbar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id='Accessories'>
+            <h5 style="padding: 15px;" class="left-dd-title">Departments</h5>
+            <a href="#" class="left-dd-title"><img src="../static/asserts/sidenavbar/interior-accessories.svg" alt="">
+                Interior Accessories</a>
+            <a href="#" class="left-dd-title"><img src="../static/asserts/sidenavbar/interior-accessories.svg" alt="">
+                Exterior Accessories</a>
+            <a href="#" class="left-dd-title"><img src="../static/asserts/sidenavbar/interior-accessories.svg" alt="">
+                performance Accessories</a>
+            <a href="#" class="left-dd-title"><img src="../static/asserts/sidenavbar/interior-accessories.svg" alt="">
+                lighting Accessories</a>
+            <a href="#" class="left-dd-title"><img src="../static/asserts/sidenavbar/interior-accessories.svg" alt="">
+                wheels Accessories</a>
+            <a href="#" class="left-dd-title"><img src="../static/asserts/sidenavbar/interior-accessories.svg" alt="">
+                body parts Accessories</a>
+            <a href="#" class="left-dd-title"><img src="../static/asserts/sidenavbar/interior-accessories.svg" alt="">
+                automotive Accessories</a>
+        </div>
+        <hr>
+        <div>
+            <div id="usersWork">
+                <a href="#"><i class="las la-user-tie"></i> My Account</a>
+                <a href="#"><i class="las la-shopping-bag"></i> My Wish List</a>
+                <a href="#"><i class="las la-globe"></i> My Ship WorldWide</a>
+                <a href="#"><i class="las la-id-card"></i> Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white" style="padding:0px 5%">
+        <div class="navbarMain">
+            <a href="#" onclick="openNav()" class="menuIcon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+            <!-- brand Name -->
+            <a href="" class="headerLogo">
+
+            </a>
+            <div class="mt-1">
+                <div class="searchtheam searchtheamLabel">
+                    <img id='search' class="pl-5" src="https://cdn.carid.com/css/prod-images/ed0a4bba.svg" alt="">
+                </div>
+            </div>
+
+            <!-- signup logo -->
+            <div class="accountContainer">
+                <div id="myAccountContainer">
+                    <a href="" style="text-decoration: none; color: black;">
+                        <span id="myAccount">My Account <img src="../static/asserts/images/5124fc6b.svg" id="arrowIcon"
+                                                             alt=""></span>
+                        <span style='font-size: 14px;'>Hello, Sign in</span>
+                    </a>
+                </div>
+            </div>
+            <!-- end of signup Logo -->
+            <div class="addToCart">
+                <a href="" id="heart"><i class="lar la-heart"></i></a>
+                <a href=""><i class="las la-shopping-cart"></i></a>
+            </div>
+            <!-- end of Brand Name -->
+        </div>
+        <nav class="nav-head">
+            <div class="nav-menu-wrapper mr-auto">
+                <ul class="nav-menu-item">
+                    <li><a href="#">Interior</a></li>
+                    <li><a href="#">Exterior</a></li>
+                    <li><a href="#">Performance</a></li>
+                    <li><a href="#">Lighting</a></li>
+                    <li><a href="#">Wheels</a></li>
+                    <li><a href="#">Repair</a></li>
+                    <li><a href="#">Body</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Automotive Tools</a></li>
+                    <li><a href="#">Specialty</a></li>
+                </ul>
+                <a class="text-right text-danger" style="width: 20%; padding-top: 18px; text-decoration: none;">
+                        <span style="cursor: pointer;">Help Center <img src="../static/asserts/images/5124fc6b.svg"
+                                                                        id="arrowIcon"
+                                                                        alt=""></span>
+                </a>
+            </div>
+        </nav>
+
+    </div>
+    <!-- end of Navbar -->
+
+    <!-- subscribe to our NEWSLETTER -->
+    <!-- <div class="NEWSLETTER text-white text-center p-3" style="margin-top: -15px;">
+        <div>
+            <span class="font-weight-bold pr-3">UNLOCK ID PERKS</span> <button class="btn btn-white"><b>SUBSCRIBE TO OUR
+        NEWSLETTER</b></button>
+        </div>
+    </div> -->
+    <!--End of subscribe to our NEWSLETTER -->
+    <!-- carousel -->
+    <!-- <div class="carouselHeading">
+        <div class="carousel" id="carousel">
+            <div>
+                <div class="text-center pt-5">
+                    <h1 class="display-4 font-weight-bold text-white">SELECT YOUR VEHICLE</h1>
+                    <p style="font-size: 18px; font-weight: 300;" class="text-white h6">Customize, Modify, Upgrade, Repair, Replace
+                    </p>
+                </div>
+            </div>
+            <div class="formContanier">
+                <div class="inputForm">
+                    <div class="maincontainer">
+                        <div class="p-4 ">
+                            <form action="">
+                                <div class="carouselForm">
+                                    <div>
+                                        <select name="" id="" class="form-control">
+                                            <option selected="selected">Years</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2017">2017</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <select name="" id="" class="form-control">
+                                            <option selected="selected">Make</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2017">2017</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <select name="" id="" class="form-control">
+                                            <option selected="selected">Model</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2017">2017</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <button style="font-size: 24px; padding: 12px 40px;" class="btn w-100 btn-danger">Go</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+    <div class="carouselbottom pt-5 text-center">
+        <a href=""> SHOP BY PRODUCT (16,434,423)</a>
+        <span style="border-left: 2px solid white; height: 10px;"></span>
+        <a href=""> SHOP BY BRAND (3,227)</a>
+        <span style="border-left: 2px solid white; height: 10px;"></span>
+        <a href=""> BY SERVICE TYPE</a>
+    </div>
+    {#    </div>#}
+    {#    </div>#}
+    <!-- end of carousel -->
+</header>
+<!-- some product cateogry -->
+<section class="pTypeContainer">
+    <div class="wrap pt-5">
+        <ul class="pType">
+            <li>
+                <img src="https://images.carid.com/pages/dep-icons/interior.png" alt="">
+                <a href="#">Interior</a>
+            </li>
+            <li>
+                <img src="https://images.carid.com/pages/dep-icons/exterior.png" alt="">
+                <a href="#">Exterior</a>
+            </li>
+            <li>
+                <img src="https://images.carid.com/pages/dep-icons/performance-parts.png" alt="">
+                <a href="#">performance</a>
+            </li>
+            <li>
+                <img src="https://images.carid.com/pages/dep-icons/lights.png" alt="">
+                <a href="#">lighting</a>
+            </li>
+            <li>
+                <img src="https://images.carid.com/pages/dep-icons/wheels.png" alt="">
+                <a href="#">wheels & tires</a>
+            </li>
+            <li>
+                <img src="https://images.carid.com/pages/dep-icons/repair-parts.png" alt="">
+                <a href="#">repair parts</a>
+            </li>
+            <li>
+                <img src="https://images.carid.com/pages/dep-icons/body-parts.png" alt="">
+                <a href="#">body parts</a>
+            </li>
+            <li>
+                <img src="https://images.carid.com/pages/dep-icons/audio.png" alt="">
+                <a href="#">Audio</a>
+            </li>
+            <li>
+                <img src="https://images.carid.com/tools-garage/pages/dep-icons/automotive-tools_ic.png" alt="">
+                <a href="#">automotive tools</a>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- end of some product Cateogry -->
+<section class="mt-5 maincontainer">
+
+    <div class="ProductTabContainer">
+
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link text-dark text-uppercase" aria-current="page" href="#">All Category</a>
+            </li>
+            {% for catego in category %}
+                <li class="nav-item">
+                    <a class="nav-link text-dark text-uppercase" aria-current="page"  onclick="fetchCategory({{ catego.id }})">{{ catego.name }}</a>
+                </li>
+            {% endfor %}
+
+        </ul>
+        <br>
+        <div class="productCard-container productTabPanel prodcutPannel">
+
+            <div class="productCard">
+                <img src="https://ic.carid.com/icons/exhaust-systems_ic_5.jpg" alt="">
+                <a href="">oil change tools</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="text-center smargin-top">
+                <h1 class="mb-4 h3">MUST HAVES FOR EVERY CAR</h1>
+                <p class="service-p">
+                    Enjoy an entirely new level of driving experience with our in-depth selection of superior car bulbs,
+                    brake pads, spark plugs, and other automotive parts and accessories designed to keep your car
+                    running at its absolute best.
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="service-container table-responsive">
+                <a href="" class="service">
+                    <span class="service-heading">Transmission Fluid Change</span>
+                    <span class="service-body">Keep your engine running great</span>
+                    <img src="../static/asserts/images/transmission-replacement.svg" class="service-img" alt="">
+                </a>
+                <a href="" class="service">
+                    <span class="service-heading">Transmission Fluid Change</span>
+                    <span class="service-body">Keep your engine running great</span>
+                    <img src="../static/asserts/images/transmission-replacement.svg" class="service-img" alt="">
+                </a>
+                <a href="" class="service">
+                    <span class="service-heading">Transmission Fluid Change</span>
+                    <span class="service-body">Keep your engine running great</span>
+                    <img src="../static/asserts/images/transmission-replacement.svg" class="service-img" alt="">
+                </a>
+
+                <a href="" class="service">
+                    <span class="service-heading">Transmission Fluid Change</span>
+                    <span class="service-body">Keep your engine running great</span>
+                    <img src="../static/asserts/images/transmission-replacement.svg" class="service-img" alt="">
+                </a>
+
+                <a href="" class="service">
+                    <span class="service-heading">Transmission Fluid Change</span>
+                    <span class="service-body">Keep your engine running great</span>
+                    <img src="../static/asserts/images/transmission-replacement.svg" class="service-img" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- service type -->
+    <div>
+        <div class="container smargin-top">
+            <div class="text-center mt-5">
+                <h1 class="mb-4 h3">MUST HAVES FOR EVERY CAR</h1>
+                <p class="service-p">
+                    Enjoy an entirely new level of driving experience with our in-depth selection of superior car bulbs,
+                    brake pads, spark plugs, and other automotive parts and accessories designed to keep your car
+                    running at its absolute best.
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid table-responsive">
+            <div class="service-container">
+                <a href="" class="service">
+                    <span class="service-heading">Transmission Fluid Change</span>
+                    <span class="service-body">Keep your engine running great</span>
+                    <img src="../static/asserts/images/transmission-replacement.svg" class="service-img" alt="">
+                </a>
+                <a href="" class="service">
+                    <span class="service-heading">Transmission Fluid Change</span>
+                    <span class="service-body">Keep your engine running great</span>
+                    <img src="../static/asserts/images/transmission-replacement.svg" class="service-img" alt="">
+                </a>
+                <a href="" class="service">
+                    <span class="service-heading">Transmission Fluid Change</span>
+                    <span class="service-body">Keep your engine running great</span>
+                    <img src="../static/asserts/images/transmission-replacement.svg" class="service-img" alt="">
+                </a>
+
+                <a href="" class="service">
+                    <span class="service-heading">Transmission Fluid Change</span>
+                    <span class="service-body">Keep your engine running great</span>
+                    <img src="../static/asserts/images/transmission-replacement.svg" class="service-img" alt="">
+                </a>
+
+                <a href="" class="service">
+                    <span class="service-heading">Transmission Fluid Change</span>
+                    <span class="service-body">Keep your engine running great</span>
+                    <img src="../static/asserts/images/transmission-replacement.svg" class="service-img" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end of service type -->
+
+    <!-- car-vedioGallery -->
+    <div class="mb-5">
+        <div class="smargin-top">
+            <div class="videoGallery">
+                <div class="videoGallery1">
+                    <img class="videoGalleryImages" src="../static/asserts/images/Cars/1.jpg" alt="">
+                </div>
+                <div class="videoGallery2">
+                    <img class="videoGalleryImages" src="../static/asserts/images/Cars/2.jpg" alt="">
+                </div>
+                <div class="videoGallery3">
+                    <img class="videoGalleryImages" src="../static/asserts/images/Cars/3.jpg" alt="">
+                </div>
+                <div class="videoGallery4">
+                    <img class="videoGalleryImages" src="../static/asserts/images/Cars/5.jpg" alt="">
+                </div>
+                <div class="videoGallery5">
+                    <img class="videoGalleryImages" src="../static/asserts/images/Cars/5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of car-vedioGallery -->
+
+
+</section>
+<section class="bg-white pb-5">
+    <div class="maincontainer">
+        <!-- Featured Makes -->
+        <div class="container-fluid bg-white pt-5">
+            <div class="mb-4">
+                <div class="tabContainer-Button">
+                    <button class="tabButtons" onclick="showPanel(0,'black')" type="button">Featured Makes</button>
+                    <button class="tabButtons" onclick="showPanel(1,'black')" type="button">Featured Models</button>
+
+                </div>
+            </div>
+            <div class="tabContainer">
+                <div class="subCategory-container tabPanel" id="tabpanel1">
+                    <a href="" class="subCateogry">FORD</a>
+                    <a href="" class="subCateogry">Acura</a>
+                    <a href="" class="subCateogry">Alfa Romeo</a>
+                    <a href="" class="subCateogry">American Motor</a>
+                    <a href="" class="subCateogry">Astron Martin</a>
+                    <a href="" class="subCateogry">Audi</a>
+                    <a href="" class="subCateogry">Austin</a>
+                    <a href="" class="subCateogry">Austin Healery</a>
+                    <a href="" class="subCateogry">Avanit</a>
+                    <a href="" class="subCateogry">Bentley</a>
+                    <a href="" class="subCateogry">BMW</a>
+                    <a href="" class="subCateogry">Bugatti</a>
+                    <a href="" class="subCateogry">Buick</a>
+                    <a href="" class="subCateogry">Cadillac</a>
+                    <a href="" class="subCateogry">Checker</a>
+                    <a href="" class="subCateogry">Chevy</a>
+                    <a href="" class="subCateogry">Dacia</a>
+                    <a href="" class="subCateogry">Daewoo</a>
+                    <a href="" class="subCateogry">De Tomaso</a>
+                    <a href="" class="subCateogry">Dodge</a>
+                    <a href="" class="subCateogry">Eagle</a>
+                    <a href="" class="subCateogry">Edsel</a>
+                    <a href="" class="subCateogry">Fagro</a>
+                    <a href="" class="subCateogry">Farrari</a>
+                    <a href="" class="subCateogry">Fiat</a>
+                </div>
+                <div class="subCategory-container tabPanel" id="tabpanel2">
+                    <a href="" class="subCateogry">FORD</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                    <a href="" class="subCateogry">MERCEDES tab2</a>
+                </div>
+            </div>
+            <div class="text-center">
+
+                <input value='View More' id='hideShowButton' type="button" class="btn btn-outline-dark w-25">
+            </div>
+        </div>
+    </div>
+    <!-- End Featured Makes -->
+
+
+    <!-- gallery2 -->
+    <div class="maincontainer pt-5">
+        <div class="galleryImage2">
+            <div class="galleryImage21">
+                <img src="../static/asserts/images/Cars/1.jpg" alt="">
+            </div>
+            <div class="galleryImage22">
+                <img src="../static/asserts/images/Cars/4.jpg" alt="">
+            </div>
+            <div class="galleryImage23">
+                <img src="../static/asserts/images/Cars/2.jpg" alt="">
+            </div>
+            <div class="galleryImage24">
+                <img src="../static/asserts/images/Cars/3.jpg" alt="">
+            </div>
+            <div class="galleryImage25">
+                <img src="../static/asserts/images/Cars/5.jpg" alt="">
+            </div>
+            <div class="galleryImage26">
+                <img src="../static/asserts/images/Cars/8.jpg" alt="">
+            </div>
+            <div class="galleryImage27">
+                <img src="../static/asserts/images/Cars/2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end of gallery2 -->
+</section>
+
+<section class="bg-white pt-4 pb-4">
+    <!-- text area -->
+    <div class="maincontainer">
+        <p class="text-area-p">Perform preventive maintenance and make timely repairs, increase horsepower and improve
+            handling and braking for better overall performance, and give your car, truck, or SUV the unique appearance
+            that will have heads turning wherever you roll.
+            You can do it all with parts and accessories from AutoDiino. Unlike some on-line aftermarket vendors that
+            have repair parts but can’t help you dress up your ride, or sell exterior accessories but don’t have the
+            wheels and tires you need to
+            complete the look, we’re the one-stop destination for all your automotive essentials. No matter what you
+            want to do with your vehicle or where you get your kicks – on the street, at the track, or off-road – you’ll
+            find quality, name brand
+            parts and accessories on our digital shelves to turn your automotive dreams into reality.</p>
+        <div id="ReadMoreLess" style="display: none;">
+            <p class="text-area-p">
+                Improving your vehicle’s functionality and aesthetic appeal will make driving and the whole ownership
+                experience more enjoyable, and we have products for every taste and budget. Protect your interior and
+                boost comfort and ambiance with custom logo floor
+                mats, custom seat covers, steering wheel cover and shift knob, personalize your cabin with a wood dash
+                kit and custom gauges, and make any trip more enjoyable with a digital media receiver and full range
+                speakers. Shield your truck
+                bed from damage with a bed mat or liner and sleek, low profile tonneau cover. Enhance your haulers cargo
+                carrying and towing capabilities with bed organizers, a bed extender, tie-down anchors and straps,
+                trailer hitches & towing accessories,
+                and more. And you can get a boost into the cabin and the bed with a set of running boards or side steps,
+                bed steps & tailgate steps, and hitch steps.
+            </p>
+            <p class="text-area-p">
+                Car buffs are proud of what they drive, but few are satisfied with factory stock appearance. There’s no
+                better way to put a personal stamp on your ride than with a custom look and our range of exterior
+                accessories is packed with the products to make it
+                happen. Our selection includes chrome trim, custom grilles, and a huge assortment of body mods. From
+                bumper valances, rear spoilers, custom hoods and complete body kits for road burners, to off-road
+                bumpers, grille guards, body armor
+                and fender flares guaranteed to boost the toughness factor on 4x4s, we have what you need to create a
+                distinctive machine. LED lighting is the hottest visual appeal booster, plus you get better visibility
+                for safer driving. We have
+                LED headlights, tail lights, halo rings, off-road light bars and more, including custom LED light kits
+                that create a dazzling display you control from your smartphone. Few mods can improve curb appeal and
+                performance like a set of
+                custom wheels and tires, and our selection is unrivaled, but if you’re unsure what will fit your ride
+                our wheel and tire experts are just a phone call away.
+
+            </p>
+            <p class="text-area-p">
+                No matter how powerful and fast the factory made it, we know you’re not content with OE performance
+                either. Whether you just want a slight power boost and nice rumble or be pressed into the seat and hear
+                a roar when you hit the pedal, our performance
+                parts deliver. From free-flowing cold air intakes and cat-back exhaust systems, to cams, ported heads,
+                and performance programmers, to power adders like superchargers, turbochargers, and nitrous oxide, the
+                only question is how much
+                horsepower do you want to make? Plus, we have a full complement of clutches, torque converters, axles,
+                ring & pinion sets and other performance transmission and driveline parts to get that power to the
+                ground. For handling to match
+                the acceleration go with performance coilovers, sway bars, strut braces, and lowering kits for pavement
+                fun, or lift kits, springs, shocks, and skid plates for off-road adventures. And you can get your
+                machine hauled down safely with
+                drilled and slotted brake rotors, multi-piston calipers, application specific brake pads, and braided
+                steel hoses, or go with a full big brake kit.
+            </p>
+            <p class="text-area-p">
+                Regular vehicle maintenance can prevent unexpected failures and expensive major problems. But there’s no
+                need to waste time trying to find what you need at an auto parts store when we can have the parts
+                required for your maintenance regimen like air,
+                fuel, oil, and cabin air filters, motor oil, antifreeze, spark plugs, and wiper blades delivered right
+                to your door. We also offer all commonly replaced wear parts like timing and drive belts, cooling system
+                hoses, shocks and struts,
+                disc brake pads and rotors, clutch kits, and batteries. We’re your auto service headquarters for repair
+                jobs big and small, from alternator, water pump, and CV-joint halfshaft replacement to engine and
+                transmission overhauls, plus
+                we have the tools, shop supplies and consumables necessary to complete the job. We also have an
+                extensive selection of replacement body parts as well as the car wash, cleaners, wax, wheel & tire care
+                products, and other detailing supplies
+                to maintain your ride’s stunning appearance.
+            </p>
+            <p class="text-area-p">
+                AutoDiino.com is structured to make shopping easy, with all parts and accessories intuitively organized.
+                Each product category features plenty of useful illustrations, descriptions, menu choices and search
+                options so you can effortlessly find what you’re
+                looking for. Plus, you’ll find links to helpful guides and articles, written by professional technicians
+                and car enthusiasts and filled with timely advice and additional product information, as well as links
+                to product reviews posted
+                by other customers. We’ve also created Specialty Shops stocked with products to satisfy your obsession,
+                vehicle activity or ride of choice. If you’re a diehard sports fan, you’ll find plenty of gear with the
+                logo of your favorite team
+                in Fan Zone. Never have enough camo? We have products in all your favorite patterns in Camo Gear.
+                Prepping for adventures in the dirt? You can make sure you’re properly equipped with a visit to Off-Road
+                World. And we’ve gathered all
+                the vehicle appropriate parts and accessories you’re looking for in our Jeep, Truck, and SUV shops.
+            </p>
+        </div>
+    </div>
+    <div class="text-center">
+        <input type="button" id="ReadMoreButton" class="btn btn-outline-dark w-25 font-weight-bold" value="Read More">
+    </div>
+    <!-- end of text area -->
+</section>
+
+<section>
+    <!-- contact me -->
+    <div class="p-4 contactCardBack">
+        <div class="contactmeCard-container">
+            <div class="">
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center">
+                        <img src="https://cdn.carid.com/css/prod-images/907bef71.svg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <a href="" class="text-white">
+                            <span style="display: block;">Help Center</span>
+                            <span>Ask questions & get instant Answers</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center">
+                        <img src="https://cdn.carid.com/css/prod-images/907bef71.svg" alt="">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <a href="" class="text-white">
+                            <span style="display: block;">Help Center</span>
+                            <span>Ask questions & get instant Answers</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center">
+                        <img src="https://cdn.carid.com/css/prod-images/907bef71.svg" alt="">
+                    </div>
+                    <div class="col-md-8 col-12">
+                        <a href="" class="text-white">
+                            <span style="display: block;">Help Center</span>
+                            <span>Ask questions & get instant Answers</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of contact me -->
+</section>
+<footer class="pt-5">
+    <div class="footerContainer pl-5 pr-5">
+        <div id="part1">
+            <p class="footerSubHeading">SIGN UP FOR OUR NEWSLETTER</p>
+            <p class="pr-5 pt-3" style="font-size: 14px;">to stay up-to-date on our promotions, discounts, sales,
+                special offers and more.</p>
+            <div class="social">
+                <a href="#" class=""><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class=""><i class="fab fa-twitter"></i></a>
+                <a href="#" class=""><i class="fab fa-youtube"></i></a>
+                <a href="#" class=""><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" class=""><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="pt-4" id="gal">
+                <i class="fa-2x fas fa-images" style="padding: 0 5px;"></i>&nbsp;&nbsp;&nbsp;<a
+                    style="color: grey; justify-content: center;" href=""> Inspiration Gallery</a>
+            </div>
+        </div>
+        <div id="part2">
+            <p class="footerSubHeading">CUSTOMER SERVICE</p>
+            <div class="pt-3 footerSubHeading-a">
+                <a href="#">Help Center</a>
+                <a href="#">My Account</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Return Policy</a>
+                <a href="#">Price Match</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div id="part3">
+            <p class="footerSubHeading">INFORMATION</p>
+            <div class="pt-3 footerSubHeading-a">
+                <a href="#">About Us</a>
+                <a href="#">Investor</a>
+                <a href="#">Guides & Articles</a>
+                <a href="#">Customer Reviews</a>
+                <a href="#">Coupon Codes</a>
+                <a href="#">In The News</a>
+                <a href="#">Sell on AutoDiino</a>
+                <a href="#">Buy Wholesale</a>
+            </div>
+        </div>
+        <div id="part4">
+            <p class="footerSubHeading">CONTACTS</p>
+            <div class="footerSubHeading-a pt-3" style="font-size: 15px;">
+                <div class="row pb-2 pt-2">
+                    <div class="col-3">
+                        <i class="fa fa-2x fa-map-marker-alt" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-9">
+                        <p>
+                            AutoDiino.com 1 Corporate Drive Cranbury · NJ · 08512
+                        </p>
+                    </div>
+                </div>
+                <div class="row pb-2 pt-2">
+                    <div class="col-3">
+                        <i class="fas fa-2x fa-phone-alt" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-9">
+                        <p>
+                            AutoDiino.com 1 Corporate Drive Cranbury · NJ · 08512
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row pb-2 pt-2">
+                    <div class="col-3">
+                        <i class="far fa-2x fa-comments" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-9">
+                        <button class="btn btn-outline-dark">Live Chat</button>
+                    </div>
+                </div>
+
+                <div class="row pb-2 pt-2">
+                    <div class="col-3">
+                        <i class="fas fa-2x fa-at" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-9">
+                        <p>
+                            AutoDiino.com 1 Corporate Drive Cranbury · NJ · 08512
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer2 pt-5 pl-5 pr-5">
+        <div>
+            <p style="font-size: 13px;">All manufacturer names, symbols, and descriptions, used in our images and text
+                are used solely for identification purposes only. It is neither inferred nor implied that any item sold
+                by AutoDiino.com is a product authorized by or in any way
+                connected with any vehicle manufacturers displayed on this page.</p>
+        </div>
+        <div class="footerImages pl-5">
+            <div>
+                <img src="https://cdn.carid.com/css/prod-images/a81d2570.svg" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.carid.com/css/prod-images/a81d2570.svg" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.carid.com/css/prod-images/a81d2570.svg" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.carid.com/css/prod-images/a81d2570.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer3 pt-4 pl-5 pr-5 pb-4 bg-gray">
+        <div class="footer3main">
+            <div id='copyright'>
+                <p style="font-size: 14px;">Copyright © 2021 All rights reserved.</p>
+            </div>
+            <div id="footerPolicy" class="text-right footer3-a">
+                <a href="">Privacy Policy</a>
+                <a href="">Secure Shopping</a>
+                <a href="">SiteMap</a>
+            </div>
+        </div>
+</footer>
+
+</div>
+<script>
+    function fetchCategory(id) {
+        alert("Gef")
+        var xml = new XMLHttpRequest();
+        xml.onreadystatechange = function () {
+            if (this.status == 200 && this.readyState == 4) {
+                var output = this.response;
+                console.log("=========================>",output);
+            }
+        };
+        xml.open('GET', {% url 'product:categoryApi' %}, true);
+        xml.send();
+    }
+
+</script>
+<script src="../static/asserts/bootstrap/js/jquery.min.js"></script>
+<script src="../static/asserts/bootstrap/js/popper.min.js"></script>
+<script src="../static/asserts/bootstrap/js/bootstrap.js"></script>
+<script src="../static/asserts/fontawesome/js/all.js"></script>
+<script src="../static/asserts/main.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#ReadMoreButton").click(function () {
+            $("#ReadMoreLess").toggle('slow', function () {
+                var val = document.getElementById('ReadMoreButton').value;
+                console.log(val);
+                if (val = 'Read More') {
+                    document.getElementById('ReadMoreButton').value = 'Read Less';
+                } else {
+                    document.getElementById('ReadMoreButton').value = 'Read More';
+                }
+            });
+
+        });
+    });
+</script>
+
+<script>
+    var bgImageArray = ["images/Cars/1.jpg", "images/Cars/2.jpg", "images/Cars/4.jpg", "images/Cars/5.jpg"],
+        secs = 4;
+    bgImageArray.forEach(function (img) {
+        // new Image().src = base + img;
+        new Image().src = img;
+        // caches images, avoiding white flash between background replacements
+    });
+
+    function backgroundSequence() {
+        window.clearTimeout();
+        var k = 0;
+        for (i = 0; i < bgImageArray.length; i++) {
+            setTimeout(function () {
+                document.getElementById('carousel').style.background = "linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(" + bgImageArray[k] + ") no-repeat center center fixed";
+                document.getElementById('carousel').style.backgroundSize = "cover";
+                if ((k + 1) === bgImageArray.length) {
+                    setTimeout(function () {
+                        backgroundSequence()
+                    }, (secs * 1000))
+                } else {
+                    k++;
+                }
+            }, (secs * 1000) * i)
+        }
+    }
+
+    backgroundSequence();
+</script>
+
+
+
+</body>
+
+</html>
