@@ -8,15 +8,23 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display = ['name','description']
     search_fields = ['name']
 
-@admin.register(SubCategory)
-class SubCategoryAdmin(admin.ModelAdmin):
-    list_display = ['name','category']
-    list_filter = ['category']
+# @admin.register(SubCategory)
+# class SubCategoryAdmin(admin.ModelAdmin):
+#     list_display = ['name','category', 'parent']
+#     list_filter = ['category']
 
+@admin.register(Brands)
+class BrandsAdmin(admin.ModelAdmin):
+    pass
+@admin.register(Modal)
+class ModalsAdmin(admin.ModelAdmin):
+    pass
+@admin.register(catalogue)
+class CatalogsAdmin(admin.ModelAdmin):
+    pass
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['name', 'sort_description', 'category', 'subCategory']
-    list_filter = ['category', 'subCategory']
+    pass
 
 @admin.register(ProductImages)
 class ProductImagesAdmin(admin.ModelAdmin):
