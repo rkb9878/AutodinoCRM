@@ -1,0 +1,1 @@
+DJANGO_SETTINGS_MODULE=CRM.settings.base /home/ubuntu/new/AutodinoCRM/venv/bin/gunicorn CRM.wsgi:application --bind 0.0.0.0:8002 --chdir /home/ubuntu/new/AutodinoCRM --daemon --timeout 360 --workers=4

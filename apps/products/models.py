@@ -12,7 +12,7 @@ class Category(StatusMixin):
     description = models.TextField(null=True, blank=True)
     image = models.ImageField(upload_to=categoryImage)
     icon = models.ImageField(upload_to=categoryIcon)
-    parent = models.ManyToManyField('self', blank=True, null=True ,related_name='children')
+    parent = models.ManyToManyField('self', blank=True ,related_name='children')
 
     def __str__(self):
         return self.name
